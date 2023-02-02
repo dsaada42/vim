@@ -36,4 +36,24 @@ command! MakeTags !ctags -R .
 " Useful:
 " ^] to jump to tag under cursor
 " g^] for ambiguous tags
-" ^t go nack by one jump 
+" ^t go back by one jump
+
+" ------ AUTOCOMPLETE ------
+"
+"  --> see ins-completion for more
+"  ^x^n propositions for just this file
+"  ^x^f propositions for filenames (works with path expansion)
+"  ^x^] propositions for all tags
+"  ^n for anything specified by the 'complete' option (and go forward in the
+"  list)
+"  ^p for previous in the list of propositions
+
+" ------- FILE BROWSING -------
+"
+let g:netrw_banner=0  		" disable banner
+let g:netrw_browse_split=4	" open in prior window
+let g:netrw_altv=1 		" open splits on the right
+let g:netrw_liststyle=3		" tree view
+" :edit a folder to open a file browser
+" <CR>/v/t to open in an h-split/v-split/tab
+" --> see netrw-browse-maps for more
